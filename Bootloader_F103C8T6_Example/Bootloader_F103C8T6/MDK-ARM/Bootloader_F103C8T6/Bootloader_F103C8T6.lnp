@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"bootloader_f103c8t6\startup_stm32f103xb.o"
+"bootloader_f103c8t6\user.o"
+"bootloader_f103c8t6\main.o"
+"bootloader_f103c8t6\stm32f1xx_it.o"
+"bootloader_f103c8t6\stm32f1xx_hal_msp.o"
+"bootloader_f103c8t6\stm32f1xx_hal_gpio_ex.o"
+"bootloader_f103c8t6\stm32f1xx_hal_tim.o"
+"bootloader_f103c8t6\stm32f1xx_hal_tim_ex.o"
+"bootloader_f103c8t6\stm32f1xx_hal_uart.o"
+"bootloader_f103c8t6\stm32f1xx_hal.o"
+"bootloader_f103c8t6\stm32f1xx_hal_rcc.o"
+"bootloader_f103c8t6\stm32f1xx_hal_rcc_ex.o"
+"bootloader_f103c8t6\stm32f1xx_hal_gpio.o"
+"bootloader_f103c8t6\stm32f1xx_hal_dma.o"
+"bootloader_f103c8t6\stm32f1xx_hal_cortex.o"
+"bootloader_f103c8t6\stm32f1xx_hal_pwr.o"
+"bootloader_f103c8t6\stm32f1xx_hal_flash.o"
+"bootloader_f103c8t6\stm32f1xx_hal_flash_ex.o"
+"bootloader_f103c8t6\stm32f1xx_hal_exti.o"
+"bootloader_f103c8t6\system_stm32f1xx.o"
+--strict --scatter "Bootloader_F103C8T6\Bootloader_F103C8T6.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Bootloader_F103C8T6.map" -o Bootloader_F103C8T6\Bootloader_F103C8T6.axf
